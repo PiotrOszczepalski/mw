@@ -1,0 +1,27 @@
+// PGM: if (Ak) < ((Ad)) (L) + 2 else (L)+1 -> L
+
+ROZKAZ PGM;
+czyt wys wei il;
+wyad wea;
+czyt wys weja ode weak;
+JEŻELI Z TO @ujemne GDY NIE @dodatnie;
+
+// (L) + 2 -> L gdy (AK) < ((Ad))
+
+@ujemne il wys weja dod weak;
+wyl wea KONIEC;
+
+// (L) + 1 -> L gdy (AK) >= ((Ad))
+
+@dodatnie wyl wea wys weja dod weak KONIEC;
+
+
+
+Program:
+
+PGM X
+POB Y
+STP
+X: RST 1
+Y: RST 123
+Z: RST 5
